@@ -1,0 +1,319 @@
+ h1 {
+     font-size: 40px;
+     font-weight: 600;
+     color: #4B5563;
+     text-align: center;
+ }
+
+ h2 {
+     font-size: 20px;
+     font-weight: 400;
+     color: #6B7280;
+     margin-top: 10px;
+     text-align: center;
+ }
+
+ .popout-header-container{
+    background-color:#0E1D3D;
+ }
+ 
+ .popout-overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 100;
+ }
+
+ .popout-modal {
+     width: 100%;
+     max-height: 100%;
+     transition: opacity 0.3s ease;
+     /* Transition for opacity */
+ }
+
+
+ .high,
+ .to-do,
+ .incomplete {
+     background-color: #ff6b6b;
+ }
+
+ .medium,
+ .in-progress {
+     background-color: #f0ad4e;
+ }
+
+ .low,
+ .complete,
+ .completed {
+     background-color: #57c488;
+ }
+
+ .high,
+ .medium,
+ .low,
+ .to-do,
+ .in-progress,
+ .complete,
+ .incomplete,
+ .completed,
+ .others,
+ .backlog-title,
+ .aborted {
+     color: #fff;
+     padding: 5px 10px;
+     border-radius: 5px;
+     display: inline-block;
+     transition: background-color 0.3s ease;
+     font-size: 15px;
+     font-weight:bold;
+ }
+
+ .creator,
+ .scrum-master,
+ .product-owner,
+ .team-member {
+     color: #fafafa;
+     border-radius: 5px;
+     padding: 5px 10px;
+     display: inline-block;
+     margin-right: 5px;
+     transition: background-color 0.3s ease;
+     font-size: 15px;
+     font-weight:bold;
+ }
+
+ .creator,.aborted {
+     background-color: #dd1212;
+
+ }
+
+ .scrum-master {
+     background-color: #6B46C1;
+ }
+
+ .product-owner {
+     background-color: #38B2AC;
+ }
+
+ .team-member {
+     background-color: #ED8936;
+ }
+
+ .scrum-master:hover {
+     background-color: #805ad5;
+ }
+
+ .product-owner:hover {
+     background-color: #319795;
+ }
+
+ .team-member:hover {
+     background-color: #dd6b20;
+
+ }
+
+ .low:hover,
+ .complete:hover,
+ .completed:hover {
+     background-color: #38A169;
+ }
+
+ .medium:hover,
+ .in-progress:hover {
+     background-color: #dd6b20;
+ }
+
+ .high:hover,
+ .to-do:hover,
+ .incomplete:hover {
+     background-color: #dd1212;
+ }
+
+ .aborted:hover,
+ .creator:hover{
+        background-color: #c30202;
+ }
+
+ .backlog-title {
+     background-color: #0E1D3D;
+     font-size: 20px !important;
+ }
+
+ .function-button-blue,
+ .function-button-red {
+     color: white;
+     border: none;
+     border-radius: 5px;
+     padding: 8px 15px;
+     margin-left: 5px;
+     cursor: pointer;
+     font-size: 17px;
+     transition: background-color 0.3s ease;
+ }
+
+ .function-button-blue,.others {
+     background-color: #4b6fbc;
+ }
+
+ .function-button-blue:hover {
+     background-color: #83a6d6;
+ }
+
+ .function-button-red {
+     background-color: #ff6b6b;
+ }
+
+ .function-button-red:hover {
+     background-color: #ff8787;
+ }
+
+ .button-container {
+    padding-top:15px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .function-button-blue-container,
+ .function-button-red-container {
+     padding: 10px;
+     margin: 10px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+
+ .main-table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-bottom: 20px;
+     background-color: white;
+     /* Light blue background */
+     border-radius: 10px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+
+ }
+
+ .main-table th,
+ .main-table td {
+
+     /* Light grey border */
+     padding: 10px;
+     text-align: left;
+     font-family: 'Poppins', sans-serif;
+     /* Special font */
+     border: 1px solid #d1d1d1;
+ }
+
+ .main-table th {
+     background-color: #0E1D3D;
+     /* Lighter blue background for headers */
+     font-weight: bold;
+     color: #fff;
+ }
+
+ .main-table tbody tr:hover {
+     background-color: #c8e0f9;
+     /* Darker blue on hover */
+ }
+
+ .sub-table {
+     width: 100%;
+     border-collapse: collapse;
+     background-color: #fff;
+     /* White background for sub-table */
+     border-radius: 10px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     margin-top: 10px;
+     overflow: hidden;
+     /* Ensure border-radius is applied to the border */
+     margin-top: 10px;
+     border: 1px solid #d1d1d1;
+     /* Use a transparent border */
+ }
+
+ .sub-table th,
+ .sub-table td {
+     padding: 10px;
+     text-align: left;
+     font-family: 'Poppins', sans-serif;
+     /* Special font */
+     border: 1px solid #d1d1d1;
+     /* Light grey border */
+     color:black;
+ }
+
+ .sub-table th {
+     background-color: #dbe7f5;
+     /* Lighter blue background for sub-table headers */
+     font-weight: bold;
+ }
+
+ .sub-table tbody tr:hover {
+     background-color: #f2f2f2;
+     /* Light grey on hover */
+ }
+
+ .user-card {
+     display: flex;
+     align-items: center;
+     background-color: #fff;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+     margin-bottom: 10px;
+     font-family: 'Poppins', sans-serif;
+     font-size: 16px;
+     transition: background-color 0.3s;
+     /* Transition for smooth color change */
+ }
+
+ .user-header {
+     display: flex;
+     align-items: center;
+     background-color: #0E1D3D;
+     color: #fff;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ .user-info {
+     display: flex;
+     align-items: center;
+ }
+
+ .user-info div {
+     padding-right: 10px;
+     overflow: hidden;
+
+ }
+
+ .button-container-first {
+    padding: 20px 0px;
+    display: flex;
+
+}
+
+.button-container-second {
+    padding-right: 80px;
+    margin-left: -5px;
+}
+
+.button-container-third {
+    display: flex;
+    padding-left: 105px;
+}
+
+.empty-space {
+    padding-right: 20px;
+}
+ 
